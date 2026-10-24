@@ -1,0 +1,44 @@
+{
+  "frame_count": {
+    "type": "int",
+    "description": "抽帧数量（基准值）",
+    "hint": "实际按 4 秒一帧自动计算，最少 6 帧、最多 24 帧；这里只是兜底。",
+    "default": 8
+  },
+  "columns": {
+    "type": "int",
+    "description": "拼图列数",
+    "hint": "2 列时 8 帧是 2x4 的竖图，手机上好看。",
+    "default": 2
+  },
+  "stt_enable": {
+    "type": "bool",
+    "description": "听声音（本地语音转文字）",
+    "hint": "开着会把视频里的说话转成文字，和画面一起理解。代价是每条视频多等几十秒。",
+    "default": true
+  },
+  "stt_model": {
+    "type": "string",
+    "description": "语音模型",
+    "hint": "tiny/base/small/medium。medium 约 1.5GB、中文最准，small 快一倍但易错字。",
+    "default": "medium"
+  },
+  "keep_frames": {
+    "type": "bool",
+    "description": "保留抽帧图片",
+    "hint": "开启后拼图和下载的视频不自动删除，方便回查，但会占磁盘。",
+    "default": false
+  },
+  "scope_prefix": {
+    "type": "string",
+    "description": "生效范围（UMO 前缀）",
+    "hint": "留空表示所有私聊都能触发；填 snowluma_qq2: 则只在这一路通道生效。",
+    "default": ""
+  },
+  "ytdlp_path": {
+    "type": "string",
+    "description": "yt-dlp 路径",
+    "hint": "留空则从 PATH 里找。用 venv 装的话通常会自动找到。",
+    "default": ""
+  }
+}
