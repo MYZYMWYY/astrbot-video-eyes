@@ -2,7 +2,7 @@ name: astrbot_plugin_video_eyes
 display_name: 视频之眼
 desc: 让 Bot 看懂视频：抽帧看画面 + 本地语音转写听内容，再用人格口吻讲给你。支持本地文件、B站/抖音链接和 QQ 视频消息。
 version: 1.0.0
-author: your-name
-repo: https://github.com/your-name/astrbot-video-eyes
+author: MYZYMWYY
+repo: https://github.com/MYZYMWYY/astrbot-video-eyes
 support_platforms:
   - aiocqhttp
